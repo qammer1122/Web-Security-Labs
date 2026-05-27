@@ -1,14 +1,16 @@
-# ☁️ AWS Academy Cloud Security Builder Lab Project
+# 🔴 Web Application Penetration Testing
+## PortSwigger Web Security Academy Labs
 
-![AWS](https://img.shields.io/badge/AWS-Cloud_Security-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![IAM](https://img.shields.io/badge/AWS-IAM-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![PortSwigger](https://img.shields.io/badge/PortSwigger-Web_Security_Academy-FF6633?style=flat-square)
+![Labs](https://img.shields.io/badge/Labs_Completed-41+-brightgreen?style=flat-square)
+![OWASP](https://img.shields.io/badge/OWASP_Top_10-Covered-red?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
-![Duration](https://img.shields.io/badge/Duration-Nov_2025_–_Dec_2025-blue?style=flat-square)
-![Certified](https://img.shields.io/badge/AWS_Academy-Certified-FF9900?style=flat-square)
+![Tool](https://img.shields.io/badge/Tool-Burp_Suite-FF6633?style=flat-square)
 
-> Completed the AWS Academy Cloud Security Builder Lab — a hands-on
-> program covering cloud security fundamentals, IAM policies, access
-> management, and cloud monitoring using real AWS services and environments.
+> Hands-on web application penetration testing through
+> PortSwigger Web Security Academy labs. Covered 8 major
+> vulnerability categories with 41+ labs solved across
+> Apprentice and Practitioner difficulty levels.
 
 ---
 
@@ -16,139 +18,264 @@
 
 | Detail | Info |
 |---|---|
-| **Duration** | November 14 – December 15, 2025 |
-| **Platform** | AWS Academy Cloud Security Builder |
-| **Issued By** | Amazon Web Services (AWS) |
-| **Type** | Hands-on Lab Program |
-| **Focus** | Cloud Security, IAM, Monitoring |
-| **Status** | ✅ Completed & Graded |
+| **Duration** | April 22 – May 2, 2025 |
+| **Platform** | PortSwigger Web Security Academy |
+| **Total Labs Solved** | 41+ |
+| **Difficulty Levels** | Apprentice + Practitioner |
+| **Primary Tool** | Burp Suite |
+| **Framework** | OWASP Top 10 |
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-AWS-Cloud-Security/
+Web-Security-Labs/
 └── screenshots/
-    ├── aws-project.png
-    └── aws-project-grade.jpg
+    ├── sql-injection-labs.png
+    ├── xss-labs.png
+    ├── csrf-labs.png
+    ├── dom-vulnerabilities-labs.png
+    ├── xxe-injection-labs.png
+    ├── ssrf-labs.png
+    ├── os-command-injection-labs.png
+    └── file-upload-labs.png
 ```
 
 ---
 
-## 🏆 Project Grade
+## 📊 Labs Summary
 
-![Project Grade](screenshots/aws-project-grade.jpg)
+| # | Vulnerability Category | Labs Solved | Difficulty |
+|---|---|---|---|
+| 1 | SQL Injection | 7 | Apprentice + Practitioner |
+| 2 | Cross-Site Scripting (XSS) | 5 | Apprentice |
+| 3 | Cross-Site Request Forgery (CSRF) | 4 | Apprentice + Practitioner |
+| 4 | DOM-Based Vulnerabilities | 5 | Practitioner |
+| 5 | XML External Entity (XXE) | 5 | Apprentice + Practitioner |
+| 6 | Server-Side Request Forgery (SSRF) | 5 | Apprentice + Practitioner |
+| 7 | OS Command Injection | 5 | Apprentice + Practitioner |
+| 8 | File Upload Vulnerabilities | 5 | Apprentice + Practitioner |
+| **Total** | **8 Categories** | **41+ Labs** | |
 
 ---
 
-## 🖥️ Project Overview
+## 🔵 1. SQL Injection
 
-![AWS Project](screenshots/aws-project.png)
+![SQL Injection Labs](screenshots/sql-injection-labs.png)
+
+### Labs Completed
+
+| Lab | Level | Status |
+|---|---|---|
+| SQL injection vulnerability in WHERE clause | Apprentice | ✅ Solved |
+| SQL injection vulnerability allowing login bypass | Apprentice | ✅ Solved |
+| SQL injection attack, querying DB type on Oracle | Practitioner | ✅ Solved |
+| SQL injection attack, querying DB type on MySQL/Microsoft | Practitioner | ✅ Solved |
+| SQL injection attack, listing DB contents on non-Oracle | Practitioner | ✅ Solved |
+| SQL injection attack, listing DB contents on Oracle | Practitioner | ✅ Solved |
+| SQL injection UNION attack, determining columns | Practitioner | ✅ Solved |
+
+### Key Techniques Practiced
+- Manual injection using ' OR 1=1--
+- UNION-based data extraction
+- Database fingerprinting (Oracle, MySQL, Microsoft)
+- Login bypass via authentication manipulation
 
 ---
 
-## 🛠️ AWS Services Used
+## 🟠 2. Cross-Site Scripting (XSS)
 
-| Service | Purpose |
+![XSS Labs](screenshots/xss-labs.png)
+
+### Labs Completed
+
+| Lab | Level | Status |
+|---|---|---|
+| Reflected XSS into HTML context with nothing encoded | Apprentice | ✅ Solved |
+| Stored XSS into HTML context with nothing encoded | Apprentice | ✅ Solved |
+| DOM XSS in document.write sink via location.search | Apprentice | ✅ Solved |
+| DOM XSS in innerHTML sink via location.search | Apprentice | ✅ Solved |
+| DOM XSS in jQuery anchor href via location.search | Apprentice | ✅ Solved |
+
+### Key Techniques Practiced
+- Reflected XSS payload injection
+- Stored XSS persistent attack vectors
+- DOM-based XSS via JavaScript sinks
+- Session hijacking via XSS
+
+---
+
+## 🟡 3. Cross-Site Request Forgery (CSRF)
+
+![CSRF Labs](screenshots/csrf-labs.png)
+
+### Labs Completed
+
+| Lab | Level | Status |
+|---|---|---|
+| CSRF vulnerability with no defenses | Apprentice | ✅ Solved |
+| CSRF where token validation depends on request method | Practitioner | ✅ Solved |
+| CSRF where token validation depends on token being present | Practitioner | ✅ Solved |
+| CSRF where token is not tied to user session | Practitioner | ✅ Solved |
+
+### Key Techniques Practiced
+- Crafting malicious CSRF HTML forms
+- Bypassing token validation via method switching
+- Exploiting missing token validation
+- Session-independent token abuse
+
+---
+
+## 🟢 4. DOM-Based Vulnerabilities
+
+![DOM Vulnerabilities Labs](screenshots/dom-vulnerabilities-labs.png)
+
+### Labs Completed
+
+| Lab | Level | Status |
+|---|---|---|
+| DOM XSS using web messages | Practitioner | ✅ Solved |
+| DOM XSS using web messages and JavaScript URL | Practitioner | ✅ Solved |
+| DOM XSS using web messages and JSON.parse | Practitioner | ✅ Solved |
+| DOM-based open redirection | Practitioner | ✅ Solved |
+| DOM-based cookie manipulation | Practitioner | ✅ Solved |
+
+### Key Techniques Practiced
+- postMessage() exploitation
+- JavaScript URL manipulation
+- Open redirect via DOM manipulation
+- Cookie poisoning via DOM sources
+
+---
+
+## 🔵 5. XML External Entity (XXE) Injection
+
+![XXE Labs](screenshots/xxe-injection-labs.png)
+
+### Labs Completed
+
+| Lab | Level | Status |
+|---|---|---|
+| Exploiting XXE using external entities to retrieve files | Apprentice | ✅ Solved |
+| Exploiting XXE to perform SSRF attacks | Apprentice | ✅ Solved |
+| Blind XXE with out-of-band interaction | Practitioner | ✅ Solved |
+| Blind XXE with out-of-band interaction via XML parameter entities | Practitioner | ✅ Solved |
+| Exploiting blind XXE to exfiltrate data via malicious DTD | Practitioner | ✅ Solved |
+
+### Key Techniques Practiced
+- External entity file retrieval (/etc/passwd)
+- XXE-based SSRF chaining
+- Blind XXE with DNS/HTTP callbacks
+- Out-of-band data exfiltration
+
+---
+
+## 🟠 6. Server-Side Request Forgery (SSRF)
+
+![SSRF Labs](screenshots/ssrf-labs.png)
+
+### Labs Completed
+
+| Lab | Level | Status |
+|---|---|---|
+| Basic SSRF against the local server | Apprentice | ✅ Solved |
+| Basic SSRF against another back-end system | Apprentice | ✅ Solved |
+| Blind SSRF with out-of-band detection | Practitioner | ✅ Solved |
+| SSRF with blacklist-based input filter | Practitioner | ✅ Solved |
+| SSRF with filter bypass via open redirection | Practitioner | ✅ Solved |
+
+### Key Techniques Practiced
+- Local server SSRF (127.0.0.1/admin)
+- Internal network scanning via SSRF
+- Blacklist bypass techniques
+- Open redirect chaining for SSRF bypass
+
+---
+
+## 🔴 7. OS Command Injection
+
+![OS Command Injection Labs](screenshots/os-command-injection-labs.png)
+
+### Labs Completed
+
+| Lab | Level | Status |
+|---|---|---|
+| OS command injection, simple case | Apprentice | ✅ Solved |
+| Blind OS command injection with time delays | Practitioner | ✅ Solved |
+| Blind OS command injection with output redirection | Practitioner | ✅ Solved |
+| Blind OS command injection with out-of-band interaction | Practitioner | ✅ Solved |
+| Blind OS command injection with out-of-band data exfiltration | Practitioner | ✅ Solved |
+
+### Key Techniques Practiced
+- Command injection via ; | & operators
+- Time-based blind injection (ping/sleep)
+- Output redirection to web root
+- Data exfiltration via OOB channels
+
+---
+
+## 🟡 8. File Upload Vulnerabilities
+
+![File Upload Labs](screenshots/file-upload-labs.png)
+
+### Labs Completed
+
+| Lab | Level | Status |
+|---|---|---|
+| Remote code execution via web shell upload | Apprentice | ✅ Solved |
+| Web shell upload via Content-Type restriction bypass | Apprentice | ✅ Solved |
+| Web shell upload via path traversal | Practitioner | ✅ Solved |
+| Web shell upload via extension blacklist bypass | Practitioner | ✅ Solved |
+| Web shell upload via obfuscated file extension | Practitioner | ✅ Solved |
+
+### Key Techniques Practiced
+- PHP web shell upload and execution
+- Content-Type header manipulation
+- Extension blacklist evasion (.php5, .phtml)
+- Null byte and double extension bypass
+
+---
+
+## 🛠️ Tools Used
+
+| Tool | Purpose |
 |---|---|
-| **AWS IAM** | Identity & Access Management |
-| **AWS CloudTrail** | API activity logging & auditing |
-| **AWS CloudWatch** | Resource monitoring & alerting |
-| **AWS Config** | Configuration compliance monitoring |
-| **AWS Security Hub** | Centralized security findings |
-| **AWS S3** | Secure storage configuration |
-| **AWS VPC** | Network security & isolation |
-| **AWS GuardDuty** | Threat detection service |
+| **Burp Suite** | HTTP interception, repeater, intruder |
+| **PortSwigger Browser** | Lab environment |
+| **Burp Collaborator** | Out-of-band interaction detection |
 
 ---
 
-## 📚 Lab Activities Completed
+## 📚 Key Skills Demonstrated
 
-### 🔐 Identity & Access Management (IAM)
-- ✅ Created and configured IAM users and groups
-- ✅ Implemented least privilege access policies
-- ✅ Configured IAM roles for service-to-service access
-- ✅ Applied permission boundaries and policy conditions
-- ✅ Enabled MFA for enhanced account security
-
-### 📊 Cloud Monitoring & Logging
-- ✅ Configured CloudTrail for API activity auditing
-- ✅ Set up CloudWatch dashboards and alarms
-- ✅ Monitored resource utilization and security events
-- ✅ Created metric filters for security-relevant events
-- ✅ Configured SNS notifications for security alerts
-
-### 🛡️ Security Configuration
-- ✅ Implemented S3 bucket security policies
-- ✅ Configured VPC security groups and NACLs
-- ✅ Enabled AWS Config compliance rules
-- ✅ Reviewed Security Hub findings and recommendations
-- ✅ Applied cloud security best practices
-
-### 🔍 Threat Detection
-- ✅ Enabled and configured AWS GuardDuty
-- ✅ Analyzed threat intelligence findings
-- ✅ Investigated simulated security incidents
-- ✅ Applied remediation steps for detected threats
-
----
-
-## 🔑 Key Concepts Learned
-
-### IAM Best Practices
-- Principle of least privilege
-- Role-based access control (RBAC)
-- Service control policies (SCPs)
-- Cross-account access patterns
-- Temporary credentials via STS
-
-### Cloud Security Fundamentals
-- Shared responsibility model
-- Defense in depth in cloud environments
-- Data encryption at rest and in transit
-- Network segmentation using VPCs
-- Compliance monitoring with AWS Config
-
-### Incident Response in AWS
-- Detecting threats with GuardDuty
-- Investigating with CloudTrail logs
-- Containment using IAM policy changes
-- Evidence collection from CloudWatch
-- Remediation and recovery procedures
-
----
-
-## 📜 Certification
-
-| Detail | Info |
-|---|---|
-| **Certificate** | AWS Academy Cloud Security Builder Labs |
-| **Issued By** | Amazon Web Services Training & Certification |
-| **Date** | October 14, 2025 |
-| **Type** | Hands-on Lab Completion |
+- ✅ Manual SQL injection — Union, Boolean, Error-based
+- ✅ XSS — Reflected, Stored, DOM-based
+- ✅ CSRF token bypass techniques
+- ✅ DOM source and sink exploitation
+- ✅ XXE — File retrieval and SSRF chaining
+- ✅ SSRF — Internal network access and filter bypass
+- ✅ OS Command Injection — Blind and out-of-band
+- ✅ File upload bypass — Extension and content-type
 
 ---
 
 ## 🎓 Learning Outcomes
 
-Through this project I gained:
+Through these labs I gained:
 
-- Practical experience configuring AWS security services
-- Understanding of cloud-native security controls
-- Hands-on IAM policy creation and management
-- Experience monitoring cloud resources for threats
-- Knowledge of AWS security best practices and frameworks
-- Ability to investigate and respond to cloud security incidents
+- Deep understanding of how real web vulnerabilities work
+- Ability to manually identify and exploit OWASP Top 10 issues
+- Experience using Burp Suite for professional web testing
+- Knowledge of both attack techniques and secure remediation
+- Hands-on practice with Practitioner-level challenges
 
 ---
 
 ## 🔗 Reference
 
-- [AWS Academy](https://aws.amazon.com/training/awsacademy/)
-- [AWS Security Best Practices](https://aws.amazon.com/security/)
-- [AWS IAM Documentation](https://docs.aws.amazon.com/iam/)
-- [AWS Well-Architected Security Pillar](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html)
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security)
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 
 ---
 
